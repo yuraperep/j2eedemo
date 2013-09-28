@@ -45,11 +45,11 @@
                             <bundleFileName>example-war.war</bundleFileName>
                             <contextRoot>/example-war</contextRoot>
                         </webModule>
-                        <ejbModule>
-                            <groupId>example-ejb</groupId>
-                            <artifactId>example-ejb</artifactId>
-                            <bundleFileName>example-ejb.jar</bundleFileName>
-                        </ejbModule>
+                        <!--<ejbModule>-->
+                            <!--<groupId>example-ejb</groupId>-->
+                            <!--<artifactId>example-ejb</artifactId>-->
+                            <!--<bundleFileName>example-ejb.jar</bundleFileName>-->
+                        <!--</ejbModule>-->
                     </modules>
                 </configuration>
             </plugin>
@@ -58,12 +58,12 @@
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>example-ejb</groupId>
-            <artifactId>example-ejb</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <type>ejb</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>example-ejb</groupId>-->
+            <!--<artifactId>example-ejb</artifactId>-->
+            <!--<version>1.0-SNAPSHOT</version>-->
+            <!--<type>ejb</type>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>example-war</groupId>
             <artifactId>example-war</artifactId>
