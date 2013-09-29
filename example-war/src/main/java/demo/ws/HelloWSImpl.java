@@ -1,5 +1,8 @@
 package demo.ws;
 
+import main.java.demo.ejb.HelloEjb;
+
+import javax.ejb.EJB;
 import javax.jws.WebParam;
 import javax.jws.WebService;
 
@@ -12,8 +15,13 @@ import javax.jws.WebService;
  */
 @WebService(endpointInterface = "demo.ws.HelloWS")
 public class HelloWSImpl implements HelloWS {
+
+    //HelloEjb helloEjb;
+    @EJB
+    HelloEjb helloEjb;
+
     @Override
     public String getHelloWorldAsString(@WebParam(name = "arg0", partName = "arg0") String arg0) {
-        return "Hello world "+arg0;
+        return "Hello world from WS and ..."+helloEjb.sayHello(arg0);
     }
 }

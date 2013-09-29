@@ -19,5 +19,16 @@
         <version>2.5</version>
         <scope>provided</scope>
     </dependency>
+        <dependency>
+            <groupId>org.jboss.spec.javax.annotation</groupId>
+            <artifactId>jboss-annotations-api_1.1_spec</artifactId>
+            <version>1.0.1.Final</version>
+        </dependency>
+
+        <!--<dependency>-->
+        <!--<groupId>example-ejb</groupId>-->
+        <!--<artifactId>example-ejb</artifactId>-->
+        <!--<type>ejb</type>-->
+    <!--</dependency>-->
     </dependencies>
 </project>
